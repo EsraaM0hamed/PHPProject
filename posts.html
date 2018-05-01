@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Posts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        input,
+        option,
+        select {
+            display: block;
+            color: blue;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="posts.php" method="POST">
+        <input type="text" name="title" placeholder="Post Title">
+        <textarea type="text" name="content" placeholder="Post Content"></textarea>
+        <select name="category">
+            <option value="Add Category" disabled>Add Category</option>
+            <option value="Sport">Sport</option>
+            <option value="IT">IT</option>
+            <option value="Politics">Politics</option>
+        </select>
+        <input type="file" name="img" id="">
+        <input type="submit" value="Add Post">
+    </form>
+</body>
+
+</html>
